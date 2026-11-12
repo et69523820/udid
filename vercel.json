@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/test.php": {
+    "api/**/*.php": {
       "runtime": "vercel-php@0.7.4"
     }
   },
@@ -11,9 +11,5 @@
         { "key": "Content-Type", "value": "application/x-apple-aspen-config" }
       ]
     }
-  ],
-  "routes": [
-    { "src": "/(.*\\.mobileconfig)", "dest": "/$1" },
-    { "src": "/(.*)", "dest": "/api/test.php" }
   ]
 }
