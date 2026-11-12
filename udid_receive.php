@@ -32,11 +32,11 @@ if ($xmlStart !== false && $xmlEnd !== false) {
     }
 }
 
-// 3. 組合 GET 網址參數，直接透過 HTTP 301 讓 iPhone 跳轉至您的主站
+// 3. 組合小寫的 GET 網址參數，透過 HTTP 301 讓 iPhone 自動跳轉至您的主站
 $query = http_build_query([
-    'UDID' => $udid,
-    'VERSION' => $version,
-    'PRODUCT' => $product
+    'udid' => $udid,
+    'version' => $version,
+    'product' => $product
 ]);
 
 header('Location: https://h18.tw/vercel_udid_receive.php?' . $query, true, 301);
