@@ -39,5 +39,5 @@ $query = http_build_query([
     'product' => $product
 ]);
 
-header('Location: https://h18.tw/vercel_udid_receive.php?' . $query, true, 301);
+header('Location: https://h18.tw/vercel_udid_receive/?' . $query, true, 301);
 exit;
